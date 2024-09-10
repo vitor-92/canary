@@ -86,5 +86,5 @@ function Party:onShareExperience(exp)
 		sharedExperienceMultiplier = 1.0 + ((size * (5 * (size - 1) + 10)) / 100)
 	end
 
-	return math.ceil((exp * sharedExperienceMultiplier) / (#self:getMembers() + 1))
+	return math.ceil((exp * (sharedExperienceMultiplier * 1.50)) / (#self:getMembers() + 1))
 end
